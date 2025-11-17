@@ -1,0 +1,116 @@
+{
+ "entityType": "dataSet",
+ "category": "dataSet",
+ "data": {
+  "createdAt": "2025-11-17T09:47:56.769Z",
+  "updatedAt": "2025-11-17T09:48:07.970577Z",
+  "isDeleted": false,
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "testedAt": "2025-11-17T09:48:07.968Z",
+  "entityId": "bafd5eea-b071-47b6-a098-5a0f4e127ca4",
+  "name": "Untitled",
+  "commitId": "commit-6b53fc44-6d90-466c-9495-e4feb9d978cb",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-17 09:47:56",
+   "timeStamp": "2025-11-17T09:47:56.768640205Z"
+  },
+  "fields": {
+   "id": {
+    "ColumnName": "id",
+    "DataType": "numeric",
+    "Order": 10,
+    "ExecutedValue": 3
+   },
+   "city": {
+    "ColumnName": "city",
+    "DataType": "string",
+    "Order": 7,
+    "ExecutedValue": "Lake Jamiechester"
+   },
+   "state": {
+    "ColumnName": "state",
+    "DataType": "string",
+    "Order": 6,
+    "ExecutedValue": "Wisconsin"
+   },
+   "created_at": {
+    "ColumnName": "created_at",
+    "DataType": "date",
+    "Order": 1,
+    "ExecutedValue": "2022-12-18"
+   },
+   "country_code": {
+    "ColumnName": "country_code",
+    "DataType": "string",
+    "Order": 11,
+    "ExecutedValue": "CO"
+   },
+   "credit_limit": {
+    "ColumnName": "credit_limit",
+    "DataType": "numeric",
+    "Order": 8,
+    "ExecutedValue": 851307
+   },
+   "customer_score": {
+    "ColumnName": "customer_score",
+    "DataType": "numeric",
+    "Order": 2,
+    "ExecutedValue": 12
+   },
+   "customer_segment": {
+    "ColumnName": "customer_segment",
+    "DataType": "string",
+    "Order": 3,
+    "ExecutedValue": "VIP"
+   },
+   "name": {
+    "ColumnName": "name",
+    "DataType": "string",
+    "Order": 5,
+    "ExecutedValue": "Jonathan Wallace"
+   },
+   "email": {
+    "ColumnName": "email",
+    "DataType": "string",
+    "Order": 4,
+    "ExecutedValue": "Jonathan_Wallace@apple.com"
+   },
+   "gender": {
+    "ColumnName": "gender",
+    "DataType": "string",
+    "Order": 9,
+    "ExecutedValue": "Male"
+   }
+  },
+  "query": "select * from ecomm.customers limit 5",
+  "version": "draft",
+  "connectorId": "624893ab-9794-4f20-8c70-15735a0c520d",
+  "isDemo": false,
+  "settings": {
+   "durationUnit": "m",
+   "rowLimit": 1000,
+   "durationValue": 5,
+   "cacheEnabled": true,
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  }
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-6b53fc44-6d90-466c-9495-e4feb9d978cb",
+   "entityType": "dataSet",
+   "entityId": "bafd5eea-b071-47b6-a098-5a0f4e127ca4",
+   "entityVersion": "draft",
+   "entityNodeId": "connector",
+   "dependencyType": "connector",
+   "dependencyId": "624893ab-9794-4f20-8c70-15735a0c520d",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-17T09:47:56.781733Z",
+   "updatedAt": "2025-11-17T09:48:06.740901Z"
+  }
+ ]
+}

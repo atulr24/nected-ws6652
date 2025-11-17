@@ -1,0 +1,174 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-11-17T09:47:33.907Z",
+  "updatedAt": "2025-11-17T09:49:05.430629Z",
+  "isDeleted": false,
+  "testedAt": "2025-11-17T09:49:05.429Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "17a83b4f-fc85-4e50-8a50-0a9faee4a8bd",
+  "name": "Rule1ForMaster",
+  "commitId": "commit-b0544e8e-048b-4106-9964-a93597cfc4c7",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-17 09:47:33",
+   "timeStamp": "2025-11-17T09:47:33.907032439Z"
+  },
+  "customInput": {
+   "name": {
+    "name": "name",
+    "dataType": "string",
+    "attribute": "name",
+    "sourceType": "dataSet",
+    "executedValue": "Jonathan Wallace"
+   }
+  },
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+     "isEnabled": true
+    }
+   },
+   "properties": {
+    "rule_03": {
+     "type": "simpleCondition"
+    }
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03"
+  },
+  "action": {
+   "then": {
+    "actionNode": {
+     "actionData_action_1": {
+      "name": "action_1",
+      "connectorId": "a38c72b6-9bdb-4711-8305-8d48b81ce460",
+      "entity": "",
+      "entityId": "",
+      "config": {
+       "method": "GET",
+       "headers": [],
+       "settings": {
+        "cache": {
+         "enabled": false,
+         "duration": {
+          "unit": "d",
+          "value": 0
+         },
+         "cacheKeys": ""
+        }
+       },
+       "queryParams": [],
+       "path": "/posts/4",
+       "query": ""
+      }
+     }
+    },
+    "firstActionNode": "actionData_action_1"
+   },
+   "else": {
+    
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_02": {
+     "value": "",
+     "operator": "eq",
+     "dataType": "string",
+     "nodeType": "condition",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [
+      "rhs_GJZwKs"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "siblingIndex": 1
+    },
+    "rhs_GJZwKs": {
+     "sourceType": "dataSet",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "parent": "rule_02",
+     "siblingIndex": 1
+    },
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    }
+   }
+  },
+  "firstCustomInput": "name",
+  "description": "",
+  "policy": "first",
+  "version": "draft",
+  "type": "decisionTable",
+  "dataSetId": "bafd5eea-b071-47b6-a098-5a0f4e127ca4",
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Africa/Bissau",
+   "dateFormat": "in"
+  },
+  "isDemo": false,
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-b0544e8e-048b-4106-9964-a93597cfc4c7",
+   "entityType": "rule",
+   "entityId": "17a83b4f-fc85-4e50-8a50-0a9faee4a8bd",
+   "entityVersion": "draft",
+   "entityNodeId": "then-actionData_action_1",
+   "dependencyType": "connector",
+   "dependencyId": "a38c72b6-9bdb-4711-8305-8d48b81ce460",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-17T09:48:40.489349Z",
+   "updatedAt": "2025-11-17T09:49:02.690682Z"
+  },
+  {
+   "entityCommitId": "commit-b0544e8e-048b-4106-9964-a93597cfc4c7",
+   "entityType": "rule",
+   "entityId": "17a83b4f-fc85-4e50-8a50-0a9faee4a8bd",
+   "entityVersion": "draft",
+   "entityNodeId": "dataSet",
+   "dependencyType": "dataSet",
+   "dependencyId": "bafd5eea-b071-47b6-a098-5a0f4e127ca4",
+   "dependencyVersion": "draft",
+   "isDeleted": false,
+   "createdAt": "2025-11-17T09:48:30.295575Z",
+   "updatedAt": "2025-11-17T09:49:02.688369Z"
+  }
+ ]
+}
