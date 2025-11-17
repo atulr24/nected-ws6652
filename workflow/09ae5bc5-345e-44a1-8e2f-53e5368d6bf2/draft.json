@@ -1,0 +1,389 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "testedAt": "2025-11-17T10:32:13.176Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "createdAt": "2025-11-17T10:31:37.907Z",
+  "updatedAt": "2025-11-17T10:32:13.177269Z",
+  "isDeleted": false,
+  "entityId": "09ae5bc5-345e-44a1-8e2f-53e5368d6bf2",
+  "name": "Tset3",
+  "commitId": "commit-6c745bb1-795a-4c80-b3f2-ad8c92a41a90",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-17 10:31:37",
+   "timeStamp": "2025-11-17T10:31:37.907949032Z"
+  },
+  "startNode": "n_cBoHku",
+  "version": "draft",
+  "description": "",
+  "trigger": {
+   "apiNode": "1"
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 0
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "name": {
+       "executedValue": "sdf",
+       "name": "name",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "name": "sdf"
+     },
+     "settings": {
+      "isEnabled": true,
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "durationValue": 0,
+      "authType": "private",
+      "cacheKeys": ""
+     },
+     "nodeType": "apiTrigger",
+     "name": "Trigger",
+     "runInLoop": {
+      
+     },
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 130
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_l2ESF5",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 205
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_cBoHku",
+    "type": "rule",
+    "data": {
+     "executedValue": {
+      "additionalOutput": {
+       
+      },
+      "error": "",
+      "action": null,
+      "output": [
+       {
+        "rowId": 1,
+        "rowError": null,
+        "defaultOutputData": true
+       }
+      ],
+      "ruleId": "26e2014c-5b6c-4a13-8f57-ff27c7fbc54f",
+      "warnings": []
+     },
+     "settings": {
+      "timeout": 10,
+      "runAction": false,
+      "actionInSync": false,
+      "timeoutAsync": 20,
+      "errorContinue": false
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "26e2014c-5b6c-4a13-8f57-ff27c7fbc54f",
+     "status": "success",
+     "name": "rule3",
+     "runInLoop": {
+      
+     },
+     "blockName": "decisionTable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "y": 335,
+     "x": 560.6018676757812
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_v5ZxhV",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 410
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_69AiBW",
+    "type": "setVarNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "executedValue": "df",
+       "name": "key_0",
+       "dataType": "string",
+       "source": "globalVar",
+       "attribute": "test"
+      }
+     },
+     "executedValue": {
+      "output": {
+       "key_0": "df"
+      },
+      "resetOutput": {
+       
+      },
+      "error": ""
+     },
+     "settings": {
+      "errorContinue": false
+     },
+     "nodeType": "setVarNode",
+     "entity": "setVariableNode",
+     "entityId": "n_69AiBW",
+     "status": "success",
+     "name": "SetVariable",
+     "runInLoop": {
+      
+     },
+     "blockName": "setVariable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "y": 540,
+     "x": 560.6018676757812
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_QQQnJB",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 615
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_6zRRQe",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "value": "Value",
+       "executedValue": "Value",
+       "name": "key_0",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "key_0": "Value"
+      }
+     },
+     "settings": {
+      "timeout": 10,
+      "timeoutAsync": 20,
+      "errorContinue": false
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "n_6zRRQe",
+     "status": "success",
+     "name": "Response",
+     "runInLoop": {
+      
+     },
+     "blockName": "response",
+     "testedAt": "2025-11-17T10:32:13.176Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 745
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_lfE0uo",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_mjVX9q",
+    "source": "1",
+    "target": "n_l2ESF5",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_533lJq",
+    "source": "n_cBoHku",
+    "target": "n_v5ZxhV",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_YvjcI1",
+    "source": "n_l2ESF5",
+    "target": "n_cBoHku",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_1sbMNB",
+    "source": "n_69AiBW",
+    "target": "n_QQQnJB",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_US15hy",
+    "source": "n_v5ZxhV",
+    "target": "n_69AiBW",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_mtJ7UM",
+    "source": "n_6zRRQe",
+    "target": "n_lfE0uo",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_3WoJq4",
+    "source": "n_QQQnJB",
+    "target": "n_6zRRQe",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-6c745bb1-795a-4c80-b3f2-ad8c92a41a90",
+   "entityType": "workflow",
+   "entityId": "09ae5bc5-345e-44a1-8e2f-53e5368d6bf2",
+   "entityVersion": "draft",
+   "entityNodeId": "test",
+   "dependencyType": "variable",
+   "dependencyId": "47755ad8-3338-4d5b-bbc5-c42548e040fd",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-17T10:32:02.226579Z",
+   "updatedAt": "2025-11-17T10:32:13.004701Z"
+  },
+  {
+   "entityCommitId": "commit-6c745bb1-795a-4c80-b3f2-ad8c92a41a90",
+   "entityType": "workflow",
+   "entityId": "09ae5bc5-345e-44a1-8e2f-53e5368d6bf2",
+   "entityVersion": "draft",
+   "entityNodeId": "n_cBoHku",
+   "dependencyType": "rule",
+   "dependencyId": "26e2014c-5b6c-4a13-8f57-ff27c7fbc54f",
+   "dependencyVersion": "draft",
+   "isDeleted": false,
+   "createdAt": "2025-11-17T10:31:50.919618Z",
+   "updatedAt": "2025-11-17T10:32:13.001554Z"
+  }
+ ]
+}
