@@ -1,0 +1,188 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "testedAt": "2025-11-17T10:29:05.206Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "createdAt": "2025-11-17T10:28:50.864Z",
+  "updatedAt": "2025-11-17T10:29:05.207381Z",
+  "isDeleted": false,
+  "entityId": "4aec9a3f-268b-4eaa-aacc-01580f56164a",
+  "name": "Test2",
+  "commitId": "commit-1855fa59-6444-4bbd-8f7f-53575f835d8f",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-17 10:28:50",
+   "timeStamp": "2025-11-17T10:28:50.864516899Z"
+  },
+  "startNode": "n_a0FSEC",
+  "version": "draft",
+  "description": "",
+  "trigger": {
+   "apiNode": "1"
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 0
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "asd": {
+       "executedValue": "sda",
+       "name": "asd",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "asd": "sda"
+     },
+     "settings": {
+      "isEnabled": true,
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "durationValue": 0,
+      "authType": "private",
+      "cacheKeys": ""
+     },
+     "nodeType": "apiTrigger",
+     "name": "Trigger",
+     "runInLoop": {
+      
+     },
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "y": 130,
+     "x": 560.6018676757812
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_8BXrUq",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 205
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_a0FSEC",
+    "type": "setVarNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "value": "Value",
+       "executedValue": "Value",
+       "name": "key_0",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "resetOutput": {
+       
+      },
+      "error": "",
+      "output": {
+       "key_0": "Value"
+      }
+     },
+     "settings": {
+      "errorContinue": false
+     },
+     "nodeType": "setVarNode",
+     "entity": "setVariableNode",
+     "entityId": "n_a0FSEC",
+     "status": "success",
+     "name": "SetVariable",
+     "runInLoop": {
+      
+     },
+     "blockName": "setVariable",
+     "testedAt": "2025-11-17T10:29:05.206Z"
+    }
+   },
+   {
+    "position": {
+     "y": 335,
+     "x": 560.6018676757812
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_1BGabr",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_JkfOg7",
+    "source": "1",
+    "target": "n_8BXrUq",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_szAmKz",
+    "source": "n_a0FSEC",
+    "target": "n_1BGabr",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_zoO6q4",
+    "source": "n_8BXrUq",
+    "target": "n_a0FSEC",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false
+ }
+}
